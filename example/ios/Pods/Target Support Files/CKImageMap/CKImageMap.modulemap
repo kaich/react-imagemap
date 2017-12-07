@@ -1,0 +1,6 @@
+framework module CKImageMap {
+  umbrella header "CKImageMap-umbrella.h"
+
+  export *
+  module * { export * }
+}

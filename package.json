@@ -1,0 +1,22 @@
+{
+  "name": "react-imagemap",
+  "version": "1.0.0",
+  "description": "Simple Image Map View For React Native",
+  "main": "../src/CKReactImageMapView.js",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/kaich/CKReactImageMapView.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Image",
+    "Map"
+  ],
+  "author": "kai",
+  "license": "ISC"
+}

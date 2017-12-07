@@ -1,0 +1,30 @@
+{
+  "name": "CKImageMap",
+  "version": "0.1.3",
+  "summary": "A short description of CKImageMap.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kai/CKImageMap",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kai": "chengkai1853@163.com"
+  },
+  "source": {
+    "git": "https://github.com/kai/CKImageMap.git",
+    "tag": "0.1.3"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "CKImageMap/Classes/**/*",
+  "dependencies": {
+    "AMPopTip": [
+
+    ],
+    "Kingfisher": [
+
+    ]
+  }
+}

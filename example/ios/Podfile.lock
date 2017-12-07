@@ -1,0 +1,33 @@
+PODS:
+  - AMPopTip (3.0.3)
+  - CKImageMap (0.1.3):
+    - AMPopTip
+    - Kingfisher
+  - Kingfisher (4.5.0)
+
+DEPENDENCIES:
+  - AMPopTip (from `https://github.com/kaich/AMPopTip.git`)
+  - CKImageMap (from `https://github.com/kaich/CKImageMap.git`)
+
+EXTERNAL SOURCES:
+  AMPopTip:
+    :git: https://github.com/kaich/AMPopTip.git
+  CKImageMap:
+    :git: https://github.com/kaich/CKImageMap.git
+
+CHECKOUT OPTIONS:
+  AMPopTip:
+    :commit: fa553167645bdbe821c398755f4fc8d69f890c95
+    :git: https://github.com/kaich/AMPopTip.git
+  CKImageMap:
+    :commit: 78f3e5de9eba73301e336ac1d86bcbb4645251d0
+    :git: https://github.com/kaich/CKImageMap.git
+
+SPEC CHECKSUMS:
+  AMPopTip: 0dd5044323464e267dddb3c91d25468f7a91f3f7
+  CKImageMap: 0c223ce2456d88557baa6c722852172c93ddaa24
+  Kingfisher: 26ae0473102b77b575da51960c932431e3745407
+
+PODFILE CHECKSUM: dadcc1cbe4f763675f78fb74e1b01e4a5617ecfe
+
+COCOAPODS: 1.3.1
