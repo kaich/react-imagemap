@@ -53,13 +53,17 @@ class CKReactImageMapView: UIView {
   }
   
   
-  func addMarker(_ markerData: [String : Any]?, isNeedReload: Bool = true) {
+  func addMarker(_ markerData: [String : Any]?, isNeedReload: Bool) {
     if let marker = converJsonDataToMarker(markerData) {
       imageMapView.markers.append(marker)
     }
     if isNeedReload {
       imageMapView.reloadData()
     }
+  }
+  
+  func addMarker(_ markerData: [String : Any]?) {
+    addMarker(markerData, isNeedReload: true)
   }
   
   private var _markers: [Any] = []

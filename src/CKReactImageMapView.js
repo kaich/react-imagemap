@@ -32,6 +32,7 @@ CKReactImageMapView.propTypes = {
    */
   imageURLString: PropTypes.string,
   markers: PropTypes.array,
+  onClickAnnotation: PropTypes.func,
 };
 
 var CKReactImageMap = requireNativeComponent('CKRNImageMap', CKReactImageMapView);
