@@ -10,6 +10,7 @@ import AMPopTip
 import Kingfisher
 
 public class CKImageMapView: UIView {
+    //Map Image View
     public var imageURL: URL? {
         didSet {
             ivMap.kf.setImage(with: imageURL, placeholder: nil, options: nil, progressBlock: nil) { (image, error, type, url) in
@@ -21,11 +22,16 @@ public class CKImageMapView: UIView {
             
         }
     }
+    //All Map Annotation Markers
     public var markers: [CKMapMarker] = [] {
         didSet {
             self.reloadData()
         }
     }
+    //Show Default Popup View
+    public var showDefaultPopView = true
+    //When User Click AnnotationView Call This
+    public var clickAnnotationBlock :((CKMapMarker?) -> ())?
 
     private let scrollView = UIScrollView()
     private let ivMap = UIImageView()
@@ -101,7 +107,12 @@ public class CKImageMapView: UIView {
         for marker in markers {
             let annotationView = CKMapAnotationView(marker: marker)
             annotationView.clickBlock = { annotationView in
-                self.showPopView(annotationView: annotationView)
+                if self.showDefaultPopView {
+                    self.showPopView(annotationView: annotationView)
+                }
+                if let clickAnnotationBlock = self.clickAnnotationBlock {
+                    clickAnnotationBlock(annotationView.marker)
+                }
             }
             let finalPoint = ivMap.convert(marker.point, to: scrollView)
             annotationView.finalCenterPoint = finalPoint

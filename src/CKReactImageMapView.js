@@ -1,12 +1,28 @@
 // CKReactImageMapView.js
-import PropTypes from 'prop-types';
 import React from 'react';
-import { requireNativeComponent } from 'react-native';
+import PropTypes from 'prop-types';
+import ReactNative, { requireNativeComponent, UIManager } from 'react-native';
 
 class CKReactImageMapView extends React.Component {
   render() {
-    return <CKReactImageMap {...this.props} />;
+    return <CKReactImageMap ref={ref => this.imageMap = ref } {...this.props} />;
   }
+
+  _getImageMapHandle = (): any => {
+    return ReactNative.findNodeHandle(this.imageMap);
+  };
+
+  /**
+   * Add a Marker 
+  */
+  addMarker = (marker) => {
+    UIManager.dispatchViewManagerCommand(
+      this._getImageMapHandle(),
+      UIManager.CKReactImageMap.Commands.addMarker,
+      [marker]
+    );
+  };
+
 }
 
 CKReactImageMapView.propTypes = {

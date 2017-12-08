@@ -7,8 +7,85 @@
 
 import UIKit
 import Kingfisher
+import ObjectMapper
 
-public class CKMapMarker: NSObject {
+
+class PointTransform: TransformType {
+    public typealias Object = CGPoint
+    public typealias JSON = [String : CGFloat]
+    
+    public init() {}
+    
+    func transformFromJSON(_ value: Any?) -> CGPoint? {
+        if let value  = value as? [String : CGFloat] {
+            if let x = value["x"], let y = value["y"] {
+                return CGPoint(x: x, y: y)
+            }
+        }
+        return CGPoint.zero
+    }
+    
+    func transformToJSON(_ value: CGPoint?) -> [String : CGFloat]? {
+        if let value = value {
+            return [
+                "x" : value.x,
+                "y" : value.y,
+            ]
+        }
+        return nil
+    }
+    
+}
+
+
+class SizeTransform: TransformType {
+    public typealias Object = CGSize
+    public typealias JSON = [String : CGFloat]
+    
+    public init() {}
+    
+    func transformFromJSON(_ value: Any?) -> CGSize? {
+        if let value  = value as? [String : CGFloat] {
+            if let width = value["witch"], let height = value["height"] {
+                return CGSize(width: width, height: height)
+            }
+        }
+        return CGSize.zero
+    }
+    
+    func transformToJSON(_ value: CGSize?) -> [String : CGFloat]? {
+        if let value = value {
+            return [
+                "width" : value.width,
+                "height" : value.height
+            ]
+        }
+        return nil
+    }
+    
+}
+
+
+class URLTransform: TransformType {
+    public typealias Object = URL
+    public typealias JSON = String
+    
+    public init() {}
+    
+    func transformFromJSON(_ value: Any?) -> URL? {
+        if let str = value as? String {
+            return URL(string: str)
+        }
+        return nil
+    }
+    
+    func transformToJSON(_ value: URL?) -> String? {
+        return value?.absoluteString
+    }
+    
+}
+
+public class CKMapMarker: Mappable {
     public var point: CGPoint = CGPoint(x: 0, y: 0)
     public var size: CGSize = CGSize(width: 30, height: 40)
     public var imageURL: URL?
@@ -25,6 +102,22 @@ public class CKMapMarker: NSObject {
         self.message = message
         self.isMarked = isMarked
         self.actionTitles = actionTitles
+    }
+    
+    public required init?(map: Map) {
+        
+    }
+    
+    // Mappable
+    public func mapping(map: Map) {
+        
+        point    <- ( map["point"], PointTransform() )
+        size         <- ( map["size"], SizeTransform() )
+        imageURL      <- ( map["imageURL"], URLTransform() )
+        title       <- map["arr"]
+        message  <- map["dict"]
+        isMarked  <- map["best_friend"]
+        actionTitles     <- map["friends"]
     }
 }
 

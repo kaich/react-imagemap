@@ -11,6 +11,7 @@ import CKImageMap
 
 class CKReactImageMapView: UIView {
   let imageMapView = CKImageMapView()
+  var onClickAnnotation: RCTBubblingEventBlock?
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -21,6 +22,21 @@ class CKReactImageMapView: UIView {
     imageMapView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
     imageMapView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
     imageMapView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+    
+    imageMapView.clickAnnotationBlock = { marker in
+      if let onClickAnnotation = self.onClickAnnotation {
+        if let marker = marker {
+          onClickAnnotation([
+            "marker" : self.convertMarkerToJsonData(marker)
+          ])
+        }
+        else {
+          onClickAnnotation([
+            "marker" : []
+            ])
+        }
+      }
+    }
     
   }
   
@@ -37,56 +53,12 @@ class CKReactImageMapView: UIView {
   }
   
   
-  func addMarker(_ markerData: [String : Any]?) {
-    if let markerData = markerData {
-      let marker = CKMapMarker(point: CGPoint.zero)
-      for (key,value) in markerData {
-        switch(key) {
-        case "point":
-          if let pointData = value as? [String : CGFloat] {
-            if let x = pointData["x"], let y = pointData["y"] {
-              marker.point = CGPoint(x: x, y: y)
-            }
-          }
-          break
-        case "size":
-          if let sizeData = value as? [String : CGFloat] {
-            if let width = sizeData["width"], let height = sizeData["height"] {
-              marker.size = CGSize(width: width, height: height)
-            }
-          }
-          break
-        case  "imageURL":
-          if let urlString = value as? String {
-            marker.imageURL = URL(string: urlString)
-          }
-          break
-        case  "title":
-          if let str = value as? String {
-            marker.title = str
-          }
-          break
-        case  "message":
-          if let str = value as? String {
-            marker.message = str
-          }
-          break
-        case  "isMarked":
-          if let isMarked = value as? Bool {
-            marker.isMarked = isMarked
-          }
-          break
-        case  "actionTitles":
-          if let strArray = value as? [String] {
-            marker.actionTitles = strArray
-          }
-          break
-        default:
-          break
-        }
-        
-      }
+  func addMarker(_ markerData: [String : Any]?, isNeedReload: Bool = true) {
+    if let marker = converJsonDataToMarker(markerData) {
       imageMapView.markers.append(marker)
+    }
+    if isNeedReload {
+      imageMapView.reloadData()
     }
   }
   
@@ -95,12 +67,25 @@ class CKReactImageMapView: UIView {
     set {
       _markers = newValue
       for emMarker in _markers {
-        addMarker(emMarker as? [String : Any])
+        addMarker(emMarker as? [String : Any],isNeedReload: false)
       }
+      imageMapView.reloadData()
     }
     get {
       return _markers
     }
+  }
+  
+  
+  private func converJsonDataToMarker(_ markerData: [String : Any]?) -> CKMapMarker? {
+    if let markerData = markerData  {
+      return CKMapMarker(JSON: markerData)
+    }
+    return nil
+  }
+  
+  private func convertMarkerToJsonData(_ marker: CKMapMarker) -> [String : Any] {
+    return marker.toJSON()
   }
 
 }

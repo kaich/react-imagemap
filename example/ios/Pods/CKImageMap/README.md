@@ -17,7 +17,8 @@ ImageMapView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ImageMapView'
+pod 'AMPopTip', :git => 'https://github.com/kaich/AMPopTip.git'
+pod 'CKImageMap', :git => 'https://github.com/kaich/CKImageMap.git'
 ```
 
 ## Author
