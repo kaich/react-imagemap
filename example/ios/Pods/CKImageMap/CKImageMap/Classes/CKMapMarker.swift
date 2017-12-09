@@ -46,7 +46,7 @@ class SizeTransform: TransformType {
     
     func transformFromJSON(_ value: Any?) -> CGSize? {
         if let value  = value as? [String : CGFloat] {
-            if let width = value["witch"], let height = value["height"] {
+            if let width = value["width"], let height = value["height"] {
                 return CGSize(width: width, height: height)
             }
         }
@@ -105,7 +105,7 @@ public class CKMapMarker: Mappable {
     }
     
     public required init?(map: Map) {
-        
+
     }
     
     // Mappable

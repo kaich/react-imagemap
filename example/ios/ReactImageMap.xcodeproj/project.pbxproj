@@ -24,6 +24,7 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		44AE0064242DB93EBD4C2924 /* Pods_ReactImageMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1036FCBD0666ADF86EEA28 /* Pods_ReactImageMapTests.framework */; };
 		4D0100881FD7C50900A0DE1F /* CKReactImageMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0100871FD7C50900A0DE1F /* CKReactImageMapView.swift */; };
+		4D0101C81FDBD85900A0DE1F /* CKReactImageMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0100871FD7C50900A0DE1F /* CKReactImageMapView.swift */; };
 		4D01FC951FD64BF400A0DE1F /* CKReactImageMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D01FC941FD64BF400A0DE1F /* CKReactImageMap.m */; };
 		4D01FC961FD64BF400A0DE1F /* CKReactImageMap.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D01FC931FD64BF400A0DE1F /* CKReactImageMap.h */; };
 		4D01FCBD1FD64C0800A0DE1F /* CKImageMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDDB4EB1FD573940045ACE7 /* CKImageMapManager.m */; };
@@ -1233,6 +1234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D01FCBD1FD64C0800A0DE1F /* CKImageMapManager.m in Sources */,
+				4D0101C81FDBD85900A0DE1F /* CKReactImageMapView.swift in Sources */,
 				4D01FC951FD64BF400A0DE1F /* CKReactImageMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1377,6 +1379,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactImageMap/source/ReactImageMap-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1409,6 +1412,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactImageMap/source/ReactImageMap-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

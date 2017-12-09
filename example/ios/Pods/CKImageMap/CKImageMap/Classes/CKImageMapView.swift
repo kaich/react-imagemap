@@ -104,6 +104,11 @@ public class CKImageMapView: UIView {
     
     func layoutAnnotations() {
         annotationViews = []
+        for emView in scrollView.subviews {
+            if let emView = emView as? CKMapAnotationView {
+                emView.removeFromSuperview()
+            }
+        }
         for marker in markers {
             let annotationView = CKMapAnotationView(marker: marker)
             annotationView.clickBlock = { annotationView in

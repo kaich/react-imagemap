@@ -27,7 +27,7 @@ export default class App extends Component<{}> {
         <CKReactImageMapView 
         style={styles.instructions} 
         imageURLString="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1512564037530&di=c9daba6def0a23f7328d8c70085420c9&imgtype=0&src=http%3A%2F%2Fa.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fbd315c6034a85edf2da2383043540923dd5475f3.jpg"
-        markers={[{point: {x: 100 , y: 200}, size: {width: 20, height: 40}, title: "test", message: "message text", imageURL: "https://avatars1.githubusercontent.com/u/5013020?s=88&v=4" }]} 
+        markers={[{point: {x: 100 , y: 200}, size: {width: 20, height: 40}, title: "test", message: "message text", imageURL: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1512793642551&di=3f4454ce4d9ef58d259834aa56897f76&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Faa18972bd40735fa3981838395510fb30f240893.jpg" }]} 
         />
       </View>
     );

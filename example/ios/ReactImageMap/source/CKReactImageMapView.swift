@@ -70,6 +70,7 @@ class CKReactImageMapView: UIView {
   var markers: [Any] {
     set {
       _markers = newValue
+      imageMapView.markers = []
       for emMarker in _markers {
         addMarker(emMarker as? [String : Any],isNeedReload: false)
       }
