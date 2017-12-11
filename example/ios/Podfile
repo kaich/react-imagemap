@@ -6,8 +6,6 @@ target 'ReactImageMap' do
   use_frameworks!
 
   # Pods for ReactImageMap
-  pod 'AMPopTip', :git => 'https://github.com/kaich/AMPopTip.git'
-  pod 'CKImageMap', :git => 'https://github.com/kaich/CKImageMap.git'
 
 
   target 'ReactImageMapTests' do
@@ -20,6 +18,5 @@ end
 
 target 'CKReactImageMap' do
     use_frameworks!
-    pod 'AMPopTip', :git => 'https://github.com/kaich/AMPopTip.git'
-    pod 'CKImageMap', :git => 'https://github.com/kaich/CKImageMap.git'
+
 end

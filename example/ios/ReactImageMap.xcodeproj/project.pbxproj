@@ -23,15 +23,8 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		44AE0064242DB93EBD4C2924 /* Pods_ReactImageMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1036FCBD0666ADF86EEA28 /* Pods_ReactImageMapTests.framework */; };
-		4D0101C81FDBD85900A0DE1F /* CKReactImageMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0100871FD7C50900A0DE1F /* CKReactImageMapView.swift */; };
-		4D01FC951FD64BF400A0DE1F /* CKReactImageMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D01FC941FD64BF400A0DE1F /* CKReactImageMap.m */; };
-		4D01FC961FD64BF400A0DE1F /* CKReactImageMap.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D01FC931FD64BF400A0DE1F /* CKReactImageMap.h */; };
-		4D01FCBD1FD64C0800A0DE1F /* CKImageMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDDB4EB1FD573940045ACE7 /* CKImageMapManager.m */; };
-		4D082D9C1FDE3547008E2107 /* CKImageMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDDB4EB1FD573940045ACE7 /* CKImageMapManager.m */; };
-		4D082D9D1FDE354B008E2107 /* CKReactImageMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0100871FD7C50900A0DE1F /* CKReactImageMapView.swift */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		9EC40D2EF254F7E161FFFC7B /* Pods_CKReactImageMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59EE1EBCC2BCECF982ABAD75 /* Pods_CKReactImageMap.framework */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		F615FE6B06B02BA197364CF7 /* Pods_ReactImageMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB71E74B5BCDCB415B31D03 /* Pods_ReactImageMap.framework */; };
 /* End PBXBuildFile section */
@@ -291,19 +284,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		4D01FC8F1FD64BF400A0DE1F /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				4D01FC961FD64BF400A0DE1F /* CKReactImageMap.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
@@ -328,13 +308,6 @@
 		28D0ABE0080E0F17D3F91F0F /* Pods-ReactImageMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactImageMapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactImageMapTests/Pods-ReactImageMapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D51F65F50A7ECBB904FEA38 /* Pods-CKReactImageMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CKReactImageMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-CKReactImageMap/Pods-CKReactImageMap.release.xcconfig"; sourceTree = "<group>"; };
 		40D6ADBBCFE5AE0230E97360 /* Pods-ReactImageMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactImageMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactImageMap/Pods-ReactImageMap.debug.xcconfig"; sourceTree = "<group>"; };
-		4D0100861FD7C50900A0DE1F /* ReactImageMap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactImageMap-Bridging-Header.h"; sourceTree = "<group>"; };
-		4D0100871FD7C50900A0DE1F /* CKReactImageMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKReactImageMapView.swift; sourceTree = "<group>"; };
-		4D01FC911FD64BF400A0DE1F /* libCKReactImageMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCKReactImageMap.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D01FC931FD64BF400A0DE1F /* CKReactImageMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKReactImageMap.h; sourceTree = "<group>"; };
-		4D01FC941FD64BF400A0DE1F /* CKReactImageMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKReactImageMap.m; sourceTree = "<group>"; };
-		4DDDB4EA1FD573940045ACE7 /* CKImageMapManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKImageMapManager.h; sourceTree = "<group>"; };
-		4DDDB4EB1FD573940045ACE7 /* CKImageMapManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKImageMapManager.m; sourceTree = "<group>"; };
 		517E120F10A80E797DA080FC /* Pods-ReactImageMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactImageMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactImageMap/Pods-ReactImageMap.release.xcconfig"; sourceTree = "<group>"; };
 		59EE1EBCC2BCECF982ABAD75 /* Pods_CKReactImageMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CKReactImageMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
@@ -374,14 +347,6 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				F615FE6B06B02BA197364CF7 /* Pods_ReactImageMap.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D01FC8E1FD64BF400A0DE1F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9EC40D2EF254F7E161FFFC7B /* Pods_CKReactImageMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +435,6 @@
 		13B07FAE1A68108700A75B9A /* ReactImageMap */ = {
 			isa = PBXGroup;
 			children = (
-				4DDDB4B71FD571C70045ACE7 /* source */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -511,27 +475,6 @@
 				59EE1EBCC2BCECF982ABAD75 /* Pods_CKReactImageMap.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4D01FC921FD64BF400A0DE1F /* CKReactImageMap */ = {
-			isa = PBXGroup;
-			children = (
-				4D01FC931FD64BF400A0DE1F /* CKReactImageMap.h */,
-				4D01FC941FD64BF400A0DE1F /* CKReactImageMap.m */,
-			);
-			path = CKReactImageMap;
-			sourceTree = "<group>";
-		};
-		4DDDB4B71FD571C70045ACE7 /* source */ = {
-			isa = PBXGroup;
-			children = (
-				4DDDB4EA1FD573940045ACE7 /* CKImageMapManager.h */,
-				4DDDB4EB1FD573940045ACE7 /* CKImageMapManager.m */,
-				4D0100871FD7C50900A0DE1F /* CKReactImageMapView.swift */,
-				4D0100861FD7C50900A0DE1F /* ReactImageMap-Bridging-Header.h */,
-			);
-			name = source;
-			path = ReactImageMap/source;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -586,7 +529,6 @@
 				13B07FAE1A68108700A75B9A /* ReactImageMap */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactImageMapTests */,
-				4D01FC921FD64BF400A0DE1F /* CKReactImageMap */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				B3B268E8F2ECB829C38368DE /* Pods */,
 				2B61FF2D9486CF04915484BF /* Frameworks */,
@@ -601,7 +543,6 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* ReactImageMap.app */,
 				00E356EE1AD99517003FC87E /* ReactImageMapTests.xctest */,
-				4D01FC911FD64BF400A0DE1F /* libCKReactImageMap.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -673,25 +614,6 @@
 			productReference = 13B07F961A680F5B00A75B9A /* ReactImageMap.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4D01FC901FD64BF400A0DE1F /* CKReactImageMap */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D01FCBC1FD64BF400A0DE1F /* Build configuration list for PBXNativeTarget "CKReactImageMap" */;
-			buildPhases = (
-				03F4698EC2FEDDCD1E270BB9 /* [CP] Check Pods Manifest.lock */,
-				4D01FC8D1FD64BF400A0DE1F /* Sources */,
-				4D01FC8E1FD64BF400A0DE1F /* Frameworks */,
-				4D01FC8F1FD64BF400A0DE1F /* CopyFiles */,
-				7441B84774AB115626D31126 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CKReactImageMap;
-			productName = CKReactImageMap;
-			productReference = 4D01FC911FD64BF400A0DE1F /* libCKReactImageMap.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -709,11 +631,6 @@
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 62SPJCND2J;
 						LastSwiftMigration = 0920;
-					};
-					4D01FC901FD64BF400A0DE1F = {
-						CreatedOnToolsVersion = 9.2;
-						DevelopmentTeam = 9V3R34P226;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -782,7 +699,6 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* ReactImageMap */,
 				00E356ED1AD99517003FC87E /* ReactImageMapTests */,
-				4D01FC901FD64BF400A0DE1F /* CKReactImageMap */,
 			);
 		};
 /* End PBXProject section */
@@ -1069,24 +985,6 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		03F4698EC2FEDDCD1E270BB9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CKReactImageMap-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		38CD9265C79B792BD1899ACA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1136,21 +1034,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactImageMap/Pods-ReactImageMap-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7441B84774AB115626D31126 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CKReactImageMap/Pods-CKReactImageMap-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7A6EE80F6C1A12A594F625B4 /* [CP] Copy Pods Resources */ = {
@@ -1223,19 +1106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				4D082D9D1FDE354B008E2107 /* CKReactImageMapView.swift in Sources */,
-				4D082D9C1FDE3547008E2107 /* CKImageMapManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D01FC8D1FD64BF400A0DE1F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D01FCBD1FD64C0800A0DE1F /* CKImageMapManager.m in Sources */,
-				4D0101C81FDBD85900A0DE1F /* CKReactImageMapView.swift in Sources */,
-				4D01FC951FD64BF400A0DE1F /* CKReactImageMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1266,7 +1137,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28D0ABE0080E0F17D3F91F0F /* Pods-ReactImageMapTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 62SPJCND2J;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1289,7 +1159,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0DA4F5B8952E4A6A2C6C8CAB /* Pods-ReactImageMapTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = 62SPJCND2J;
@@ -1348,74 +1217,6 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "ReactImageMap/source/ReactImageMap-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Release;
-		};
-		4D01FC971FD64BF400A0DE1F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E793AC25EA56182F1B07DD98 /* Pods-CKReactImageMap.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 9V3R34P226;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ReactImageMap/source/ReactImageMap-Bridging-Header.h";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "ReactImageMap-Swift.h";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4D01FC981FD64BF400A0DE1F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D51F65F50A7ECBB904FEA38 /* Pods-CKReactImageMap.release.xcconfig */;
-			buildSettings = {
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9V3R34P226;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "ReactImageMap/source/ReactImageMap-Bridging-Header.h";
-				SWIFT_OBJC_INTERFACE_HEADER_NAME = "ReactImageMap-Swift.h";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1514,15 +1315,6 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4D01FCBC1FD64BF400A0DE1F /* Build configuration list for PBXNativeTarget "CKReactImageMap" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D01FC971FD64BF400A0DE1F /* Debug */,
-				4D01FC981FD64BF400A0DE1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
