@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Facebook. All rights reserved.
 //
 
-#import "CKImageMapManager.h"
+#import "CKRNImageMapManager.h"
 #import "ReactImageMap-Swift.h"
 #import <React/RCTUIManager.h>
 

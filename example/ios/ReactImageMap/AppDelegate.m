@@ -24,7 +24,7 @@
   if(TARGET_IPHONE_SIMULATOR == 1) {
     jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.bundle?platform=ios&dev=true"];
   }else {
-    jsCodeLocation = [NSURL URLWithString:@"http://192.168.1.92:8081/index.bundle?platform=ios&dev=true"];
+    jsCodeLocation = [NSURL URLWithString:@"http://192.168.1.234:8081/index.bundle?platform=ios&dev=true"];
   }
 #else
     jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
