@@ -1,6 +1,6 @@
 {
   "name": "react-imagemap",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Simple Image Map View For React Native",
   "main": "./src/CKReactImageMapView.js",
   "directories": {
