@@ -22,7 +22,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		4D08308F1FDE7A2C008E2107 /* libReactImageMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D08308C1FDE79E0008E2107 /* libReactImageMap.a */; };
+		4D0833231FDEA55E008E2107 /* CKRNImageMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D08331F1FDEA55E008E2107 /* CKRNImageMapManager.m */; };
+		4D0833241FDEA55E008E2107 /* CKReactImageMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0833201FDEA55E008E2107 /* CKReactImageMapView.swift */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
@@ -185,20 +186,6 @@
 			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
 			remoteInfo = "jschelpers-tvOS";
 		};
-		4D08308B1FDE79E0008E2107 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 61B5FA82B9854185B1697B10 /* ReactImageMap.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4D01FC911FD64BF400A0DE1F;
-			remoteInfo = ReactImageMap;
-		};
-		4D08308D1FDE79E0008E2107 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 61B5FA82B9854185B1697B10 /* ReactImageMap.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 00E356EE1AD99517003FC87E;
-			remoteInfo = ReactImageMapTests;
-		};
 		4DDDB4891FD56AB10045ACE7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
@@ -320,11 +307,14 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactImageMap/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2325D0BD9C98C9C6124AEFF0 /* Pods-ReactImageMapExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactImageMapExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactImageMapExample/Pods-ReactImageMapExample.release.xcconfig"; sourceTree = "<group>"; };
+		4D08331F1FDEA55E008E2107 /* CKRNImageMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKRNImageMapManager.m; sourceTree = "<group>"; };
+		4D0833201FDEA55E008E2107 /* CKReactImageMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKReactImageMapView.swift; sourceTree = "<group>"; };
+		4D0833211FDEA55E008E2107 /* CKRNImageMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKRNImageMapManager.h; sourceTree = "<group>"; };
+		4D0833221FDEA55E008E2107 /* ReactImageMap-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReactImageMap-Bridging-Header.h"; sourceTree = "<group>"; };
 		4E5F254D0691133EBAEBD60D /* Pods_ReactImageMapExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactImageMapExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59EE1EBCC2BCECF982ABAD75 /* Pods_CKReactImageMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CKReactImageMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		5F1036FCBD0666ADF86EEA28 /* Pods_ReactImageMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactImageMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		61B5FA82B9854185B1697B10 /* ReactImageMap.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactImageMap.xcodeproj; path = "../node_modules/react-imagemap/ios/ReactImageMap.xcodeproj"; sourceTree = "<group>"; };
 		6CB71E74B5BCDCB415B31D03 /* Pods_ReactImageMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactImageMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -346,7 +336,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D08308F1FDE7A2C008E2107 /* libReactImageMap.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -450,6 +439,7 @@
 		13B07FAE1A68108700A75B9A /* ReactImageMap */ = {
 			isa = PBXGroup;
 			children = (
+				4D08331E1FDEA55E008E2107 /* source */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -501,13 +491,16 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		4D0830641FDE79E0008E2107 /* Products */ = {
+		4D08331E1FDEA55E008E2107 /* source */ = {
 			isa = PBXGroup;
 			children = (
-				4D08308C1FDE79E0008E2107 /* libReactImageMap.a */,
-				4D08308E1FDE79E0008E2107 /* ReactImageMapTests.xctest */,
+				4D0833211FDEA55E008E2107 /* CKRNImageMapManager.h */,
+				4D08331F1FDEA55E008E2107 /* CKRNImageMapManager.m */,
+				4D0833201FDEA55E008E2107 /* CKReactImageMapView.swift */,
+				4D0833221FDEA55E008E2107 /* ReactImageMap-Bridging-Header.h */,
 			);
-			name = Products;
+			name = source;
+			path = ReactImageMap/source;
 			sourceTree = "<group>";
 		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
@@ -543,7 +536,6 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-				61B5FA82B9854185B1697B10 /* ReactImageMap.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -722,10 +714,6 @@
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
-				{
-					ProductGroup = 4D0830641FDE79E0008E2107 /* Products */;
-					ProjectRef = 61B5FA82B9854185B1697B10 /* ReactImageMap.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -881,20 +869,6 @@
 			fileType = archive.ar;
 			path = libjschelpers.a;
 			remoteRef = 3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4D08308C1FDE79E0008E2107 /* libReactImageMap.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libReactImageMap.a;
-			remoteRef = 4D08308B1FDE79E0008E2107 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4D08308E1FDE79E0008E2107 /* ReactImageMapTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ReactImageMapTests.xctest;
-			remoteRef = 4D08308D1FDE79E0008E2107 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		4DDDB48A1FD56AB10045ACE7 /* libRCTBlob-tvOS.a */ = {
@@ -1070,7 +1044,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ReactImageMap/Pods-ReactImageMap-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReactImageMapExample/Pods-ReactImageMapExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AMPopTip/AMPopTip.framework",
 				"${BUILT_PRODUCTS_DIR}/CKImageMap/CKImageMap.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -1104,7 +1078,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				4D0833241FDEA55E008E2107 /* CKReactImageMapView.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				4D0833231FDEA55E008E2107 /* CKRNImageMapManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1134,6 +1110,7 @@
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 62SPJCND2J;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1159,6 +1136,7 @@
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = 62SPJCND2J;
