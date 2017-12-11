@@ -23,12 +23,12 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		44AE0064242DB93EBD4C2924 /* Pods_ReactImageMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1036FCBD0666ADF86EEA28 /* Pods_ReactImageMapTests.framework */; };
-		4D0100881FD7C50900A0DE1F /* CKReactImageMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0100871FD7C50900A0DE1F /* CKReactImageMapView.swift */; };
 		4D0101C81FDBD85900A0DE1F /* CKReactImageMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0100871FD7C50900A0DE1F /* CKReactImageMapView.swift */; };
 		4D01FC951FD64BF400A0DE1F /* CKReactImageMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D01FC941FD64BF400A0DE1F /* CKReactImageMap.m */; };
 		4D01FC961FD64BF400A0DE1F /* CKReactImageMap.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4D01FC931FD64BF400A0DE1F /* CKReactImageMap.h */; };
 		4D01FCBD1FD64C0800A0DE1F /* CKImageMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDDB4EB1FD573940045ACE7 /* CKImageMapManager.m */; };
-		4DDDB4EC1FD573940045ACE7 /* CKImageMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDDB4EB1FD573940045ACE7 /* CKImageMapManager.m */; };
+		4D082D9C1FDE3547008E2107 /* CKImageMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDDB4EB1FD573940045ACE7 /* CKImageMapManager.m */; };
+		4D082D9D1FDE354B008E2107 /* CKReactImageMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0100871FD7C50900A0DE1F /* CKReactImageMapView.swift */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		9EC40D2EF254F7E161FFFC7B /* Pods_CKReactImageMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59EE1EBCC2BCECF982ABAD75 /* Pods_CKReactImageMap.framework */; };
@@ -1223,8 +1223,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				4D0100881FD7C50900A0DE1F /* CKReactImageMapView.swift in Sources */,
-				4DDDB4EC1FD573940045ACE7 /* CKImageMapManager.m in Sources */,
+				4D082D9D1FDE354B008E2107 /* CKReactImageMapView.swift in Sources */,
+				4D082D9C1FDE3547008E2107 /* CKImageMapManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
