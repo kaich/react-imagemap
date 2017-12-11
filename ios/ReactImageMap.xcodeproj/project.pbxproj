@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* ReactImageMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactImageMapTests.m */; };
-		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		44AE0064242DB93EBD4C2924 /* Pods_ReactImageMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1036FCBD0666ADF86EEA28 /* Pods_ReactImageMapTests.framework */; };
 		4D0101C81FDBD85900A0DE1F /* CKReactImageMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0100871FD7C50900A0DE1F /* CKReactImageMapView.swift */; };
 		4D01FCBD1FD64C0800A0DE1F /* CKRNImageMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDDB4EB1FD573940045ACE7 /* CKRNImageMapManager.m */; };
 		9EC40D2EF254F7E161FFFC7B /* Pods_CKReactImageMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59EE1EBCC2BCECF982ABAD75 /* Pods_CKReactImageMap.framework */; };
@@ -281,7 +278,6 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* ReactImageMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactImageMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ReactImageMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactImageMapTests.m; sourceTree = "<group>"; };
 		0DA4F5B8952E4A6A2C6C8CAB /* Pods-ReactImageMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactImageMapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactImageMapTests/Pods-ReactImageMapTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -308,15 +304,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00E356EB1AD99517003FC87E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
-				44AE0064242DB93EBD4C2924 /* Pods_ReactImageMapTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4D01FC8E1FD64BF400A0DE1F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -522,7 +509,6 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00E356EE1AD99517003FC87E /* ReactImageMapTests.xctest */,
 				4D01FC911FD64BF400A0DE1F /* libReactImageMap.a */,
 			);
 			name = Products;
@@ -553,26 +539,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* ReactImageMapTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactImageMapTests" */;
-			buildPhases = (
-				45BB44BA1CA2EC95263C0EA2 /* [CP] Check Pods Manifest.lock */,
-				00E356EA1AD99517003FC87E /* Sources */,
-				00E356EB1AD99517003FC87E /* Frameworks */,
-				00E356EC1AD99517003FC87E /* Resources */,
-				F23164C5EBB832D89B13C6B2 /* [CP] Embed Pods Frameworks */,
-				7A6EE80F6C1A12A594F625B4 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ReactImageMapTests;
-			productName = ReactImageMapTests;
-			productReference = 00E356EE1AD99517003FC87E /* ReactImageMapTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		4D01FC901FD64BF400A0DE1F /* ReactImageMap */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D01FCBC1FD64BF400A0DE1F /* Build configuration list for PBXNativeTarget "ReactImageMap" */;
@@ -601,11 +567,6 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
-					00E356ED1AD99517003FC87E = {
-						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 62SPJCND2J;
-						TestTargetID = 13B07F861A680F5B00A75B9A;
-					};
 					4D01FC901FD64BF400A0DE1F = {
 						CreatedOnToolsVersion = 9.2;
 						DevelopmentTeam = 9V3R34P226;
@@ -677,7 +638,6 @@
 			projectRoot = "";
 			targets = (
 				4D01FC901FD64BF400A0DE1F /* ReactImageMap */,
-				00E356ED1AD99517003FC87E /* ReactImageMapTests */,
 			);
 		};
 /* End PBXProject section */
@@ -930,16 +890,6 @@
 		};
 /* End PBXReferenceProxy section */
 
-/* Begin PBXResourcesBuildPhase section */
-		00E356EC1AD99517003FC87E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXShellScriptBuildPhase section */
 		03F4698EC2FEDDCD1E270BB9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -953,24 +903,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CKReactImageMap-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		45BB44BA1CA2EC95263C0EA2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactImageMapTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -992,47 +924,9 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CKReactImageMap/Pods-CKReactImageMap-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7A6EE80F6C1A12A594F625B4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactImageMapTests/Pods-ReactImageMapTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F23164C5EBB832D89B13C6B2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactImageMapTests/Pods-ReactImageMapTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00E356EA1AD99517003FC87E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00E356F31AD99517003FC87E /* ReactImageMapTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4D01FC8D1FD64BF400A0DE1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1045,49 +939,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		00E356F61AD99517003FC87E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28D0ABE0080E0F17D3F91F0F /* Pods-ReactImageMapTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 62SPJCND2J;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ReactImageMapTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactImageMap.app/ReactImageMap";
-			};
-			name = Debug;
-		};
-		00E356F71AD99517003FC87E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DA4F5B8952E4A6A2C6C8CAB /* Pods-ReactImageMapTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 62SPJCND2J;
-				INFOPLIST_FILE = ReactImageMapTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactImageMap.app/ReactImageMap";
-			};
-			name = Release;
-		};
 		4D01FC971FD64BF400A0DE1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E793AC25EA56182F1B07DD98 /* Pods-CKReactImageMap.debug.xcconfig */;
@@ -1237,15 +1088,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactImageMapTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00E356F61AD99517003FC87E /* Debug */,
-				00E356F71AD99517003FC87E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4D01FCBC1FD64BF400A0DE1F /* Build configuration list for PBXNativeTarget "ReactImageMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

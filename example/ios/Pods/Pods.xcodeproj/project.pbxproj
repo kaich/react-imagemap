@@ -7,143 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		489B0D8125951B6FFBD3D867AB58F925 /* Pods-ReactImageMap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0CEDFC2D78B4F9671AECF6098AB5AC /* Pods-ReactImageMap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57411A6A4882E02D2D00C598117638CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		62D8923D1FA0E2C35FC2EBAF5A46D4CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		63BCF4D5E8D39F97218A62A062536596 /* Pods-ReactImageMapTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 292C54DD8F4A76A5757DB0EA3B10412B /* Pods-ReactImageMapTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		749B9DE1D001BDBAEAAF3DF226E98BD7 /* Pods-ReactImageMap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD31F118DBFEE1E5834E4F3821728C8C /* Pods-ReactImageMap-dummy.m */; };
-		77C6F876CA7F39C19CEAC99D1E4F81DC /* Pods-CKReactImageMap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4828F7600678A3389FCF24FA8B84CDB0 /* Pods-CKReactImageMap-dummy.m */; };
-		AAF1DBDAB56EF08E488737D13D4F2834 /* Pods-CKReactImageMap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67ED8E40377012B87E3C35FB0D17672A /* Pods-CKReactImageMap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB8373423D6D977BE19A5625E7F3539E /* Pods-ReactImageMapTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4605EFD0E3916B8D56B75C84F98AB492 /* Pods-ReactImageMapTests-dummy.m */; };
-		E3542300255FAF49B8922219D5B3D744 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4ADBF0D7094E9BFE032DA8182A9A6A5A /* Pods-ReactImageMapExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC572474A00C7CD688479A28C96617AA /* Pods-ReactImageMapExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A50FDFB02EC84B5084A475F609418AA /* Pods-ReactImageMapExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CC81E0F6305309A09041C02A8B834F /* Pods-ReactImageMapExample-dummy.m */; };
+		D74A95553308236B70BDCF9A49FA13D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0954BA46952DCE13FBA5E880806E95CF /* Pods-ReactImageMap-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactImageMap-frameworks.sh"; sourceTree = "<group>"; };
-		0BBDDF18E35242C5DF329895654D3BC9 /* Pods-ReactImageMap-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactImageMap-resources.sh"; sourceTree = "<group>"; };
-		0BD54DE31AD7E494937D0A03100A99A6 /* Pods-ReactImageMap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ReactImageMap.modulemap"; sourceTree = "<group>"; };
-		292C54DD8F4A76A5757DB0EA3B10412B /* Pods-ReactImageMapTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReactImageMapTests-umbrella.h"; sourceTree = "<group>"; };
-		2B3CB6CF82C6A75E56607AFCE536C93F /* Pods-ReactImageMap-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactImageMap-acknowledgements.plist"; sourceTree = "<group>"; };
-		376C4CCBCBFBE67853B93637CC6E86FF /* Pods-ReactImageMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactImageMapTests.release.xcconfig"; sourceTree = "<group>"; };
-		43876A649BA7546C12BAE0AB6E179D54 /* Pods-ReactImageMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactImageMap.debug.xcconfig"; sourceTree = "<group>"; };
-		4605EFD0E3916B8D56B75C84F98AB492 /* Pods-ReactImageMapTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactImageMapTests-dummy.m"; sourceTree = "<group>"; };
-		4828F7600678A3389FCF24FA8B84CDB0 /* Pods-CKReactImageMap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CKReactImageMap-dummy.m"; sourceTree = "<group>"; };
-		4DC3F4A8EA839371D42B6F86C331323B /* Pods_ReactImageMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReactImageMapTests.framework; path = "Pods-ReactImageMapTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52F9471490352B40DFA84FA7CEDED8CE /* Pods-ReactImageMap-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReactImageMap-acknowledgements.markdown"; sourceTree = "<group>"; };
-		53CFDD960A2ABB91660ADD3D45CB66B8 /* Pods-ReactImageMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactImageMapTests.debug.xcconfig"; sourceTree = "<group>"; };
-		53D9A9CE934A23B1E9832421F8C33F92 /* Pods-CKReactImageMap-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CKReactImageMap-resources.sh"; sourceTree = "<group>"; };
-		596FD2A2F4A7C03C1D51369025F9CD5E /* Pods-ReactImageMapTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactImageMapTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1AA8FFECB26DBA730D285333C7C827CB /* Pods-ReactImageMapExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactImageMapExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		24DDF48D7D109AC10E3EA13351047D1F /* Pods-ReactImageMapExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactImageMapExample.debug.xcconfig"; sourceTree = "<group>"; };
+		36529E73CCD1ED74F5A8BC4AE86DB361 /* Pods-ReactImageMapExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactImageMapExample-resources.sh"; sourceTree = "<group>"; };
+		39700C7B288DBE4544CA092B10AD0BEA /* Pods-ReactImageMapExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactImageMapExample-frameworks.sh"; sourceTree = "<group>"; };
+		4A8353FE2701121564A9E2A46624FA0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CC81E0F6305309A09041C02A8B834F /* Pods-ReactImageMapExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactImageMapExample-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		67ED8E40377012B87E3C35FB0D17672A /* Pods-CKReactImageMap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CKReactImageMap-umbrella.h"; sourceTree = "<group>"; };
-		6A3B7E0A90C4CB6F8D9E90059939A529 /* Pods-CKReactImageMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CKReactImageMap.debug.xcconfig"; sourceTree = "<group>"; };
-		76196B05657BD43510E1FF96F5740A22 /* Pods-CKReactImageMap-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CKReactImageMap-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7892B1C47A4AF41DA2D5C77C03AF1680 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7AA691A36BF5B52AB002AFFA06122B6A /* Pods-ReactImageMapTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactImageMapTests-resources.sh"; sourceTree = "<group>"; };
+		70C31AE26FDE857DCAAB02683682394B /* Pods_ReactImageMapExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReactImageMapExample.framework; path = "Pods-ReactImageMapExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A8B51EFEEAF33CB366A4D8DF2CE84DE5 /* Pods-CKReactImageMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CKReactImageMap.release.xcconfig"; sourceTree = "<group>"; };
-		B123A914E6BD51B6E956F1644EF683DE /* Pods-ReactImageMapTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ReactImageMapTests.modulemap"; sourceTree = "<group>"; };
-		B7FA59E02242DE4FDD708EC0BEDD87B8 /* Pods-ReactImageMapTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReactImageMapTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C1860DE39C05D5EA6AFA1775D37166C3 /* Pods-ReactImageMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactImageMap.release.xcconfig"; sourceTree = "<group>"; };
-		C97873B7D4679DF166BC346C31CDDF75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD9CCAC5603A82D5875FDDA9CA2D57A3 /* Pods-ReactImageMapTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactImageMapTests-frameworks.sh"; sourceTree = "<group>"; };
-		D396D60236C0B349E2A15136A8E569C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC0CEDFC2D78B4F9671AECF6098AB5AC /* Pods-ReactImageMap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReactImageMap-umbrella.h"; sourceTree = "<group>"; };
-		DD31F118DBFEE1E5834E4F3821728C8C /* Pods-ReactImageMap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactImageMap-dummy.m"; sourceTree = "<group>"; };
-		DF512349832B9853B874A66C99D25FD3 /* Pods-CKReactImageMap-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CKReactImageMap-acknowledgements.plist"; sourceTree = "<group>"; };
-		E040ED09A3A098DE5C2D5AACB765B442 /* Pods_ReactImageMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ReactImageMap.framework; path = "Pods-ReactImageMap.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE04546AC8AFD201B1DE941D03D3C15E /* Pods_CKReactImageMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CKReactImageMap.framework; path = "Pods-CKReactImageMap.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6E67E4C479A83812E18055A842C998C /* Pods-CKReactImageMap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CKReactImageMap.modulemap"; sourceTree = "<group>"; };
+		97DD43CA93FE9FB431E26A7105170A48 /* Pods-ReactImageMapExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReactImageMapExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A419E0883720810B5FFDE02EA8F30854 /* Pods-ReactImageMapExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactImageMapExample.release.xcconfig"; sourceTree = "<group>"; };
+		B8FFB4B57768FE20FC2CE66BFCC8655F /* Pods-ReactImageMapExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ReactImageMapExample.modulemap"; sourceTree = "<group>"; };
+		EC572474A00C7CD688479A28C96617AA /* Pods-ReactImageMapExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ReactImageMapExample-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		286F126FCA0AEE024324BBF13A6C6324 /* Frameworks */ = {
+		6E6707D8403AE47CE519EFC9B11BB410 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57411A6A4882E02D2D00C598117638CE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADBDE861B979F775CDEEB345D9AA31E3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E3542300255FAF49B8922219D5B3D744 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E870EBDC9ED31F1B5A2F1A0BBF6122C0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				62D8923D1FA0E2C35FC2EBAF5A46D4CA /* Foundation.framework in Frameworks */,
+				D74A95553308236B70BDCF9A49FA13D9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A34A9BB966E4D09CC77AA19C56902AF /* Pods-CKReactImageMap */ = {
+		2FCBDD2CB439B1C1D9ABE94B727A850B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C97873B7D4679DF166BC346C31CDDF75 /* Info.plist */,
-				F6E67E4C479A83812E18055A842C998C /* Pods-CKReactImageMap.modulemap */,
-				76196B05657BD43510E1FF96F5740A22 /* Pods-CKReactImageMap-acknowledgements.markdown */,
-				DF512349832B9853B874A66C99D25FD3 /* Pods-CKReactImageMap-acknowledgements.plist */,
-				4828F7600678A3389FCF24FA8B84CDB0 /* Pods-CKReactImageMap-dummy.m */,
-				53D9A9CE934A23B1E9832421F8C33F92 /* Pods-CKReactImageMap-resources.sh */,
-				67ED8E40377012B87E3C35FB0D17672A /* Pods-CKReactImageMap-umbrella.h */,
-				6A3B7E0A90C4CB6F8D9E90059939A529 /* Pods-CKReactImageMap.debug.xcconfig */,
-				A8B51EFEEAF33CB366A4D8DF2CE84DE5 /* Pods-CKReactImageMap.release.xcconfig */,
-			);
-			name = "Pods-CKReactImageMap";
-			path = "Target Support Files/Pods-CKReactImageMap";
-			sourceTree = "<group>";
-		};
-		0B39C2016BF1A02F8B82D6B3DE0A8182 /* Pods-ReactImageMap */ = {
-			isa = PBXGroup;
-			children = (
-				D396D60236C0B349E2A15136A8E569C9 /* Info.plist */,
-				0BD54DE31AD7E494937D0A03100A99A6 /* Pods-ReactImageMap.modulemap */,
-				52F9471490352B40DFA84FA7CEDED8CE /* Pods-ReactImageMap-acknowledgements.markdown */,
-				2B3CB6CF82C6A75E56607AFCE536C93F /* Pods-ReactImageMap-acknowledgements.plist */,
-				DD31F118DBFEE1E5834E4F3821728C8C /* Pods-ReactImageMap-dummy.m */,
-				0954BA46952DCE13FBA5E880806E95CF /* Pods-ReactImageMap-frameworks.sh */,
-				0BBDDF18E35242C5DF329895654D3BC9 /* Pods-ReactImageMap-resources.sh */,
-				DC0CEDFC2D78B4F9671AECF6098AB5AC /* Pods-ReactImageMap-umbrella.h */,
-				43876A649BA7546C12BAE0AB6E179D54 /* Pods-ReactImageMap.debug.xcconfig */,
-				C1860DE39C05D5EA6AFA1775D37166C3 /* Pods-ReactImageMap.release.xcconfig */,
-			);
-			name = "Pods-ReactImageMap";
-			path = "Target Support Files/Pods-ReactImageMap";
-			sourceTree = "<group>";
-		};
-		5DE19C67A35E889253D734514C9FE72B /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0A34A9BB966E4D09CC77AA19C56902AF /* Pods-CKReactImageMap */,
-				0B39C2016BF1A02F8B82D6B3DE0A8182 /* Pods-ReactImageMap */,
-				630E75306B5F40EC15ECA89FD72AF6BC /* Pods-ReactImageMapTests */,
+				4427442AD62B824C417CBC56109BC16B /* Pods-ReactImageMapExample */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		630E75306B5F40EC15ECA89FD72AF6BC /* Pods-ReactImageMapTests */ = {
+		4427442AD62B824C417CBC56109BC16B /* Pods-ReactImageMapExample */ = {
 			isa = PBXGroup;
 			children = (
-				7892B1C47A4AF41DA2D5C77C03AF1680 /* Info.plist */,
-				B123A914E6BD51B6E956F1644EF683DE /* Pods-ReactImageMapTests.modulemap */,
-				B7FA59E02242DE4FDD708EC0BEDD87B8 /* Pods-ReactImageMapTests-acknowledgements.markdown */,
-				596FD2A2F4A7C03C1D51369025F9CD5E /* Pods-ReactImageMapTests-acknowledgements.plist */,
-				4605EFD0E3916B8D56B75C84F98AB492 /* Pods-ReactImageMapTests-dummy.m */,
-				CD9CCAC5603A82D5875FDDA9CA2D57A3 /* Pods-ReactImageMapTests-frameworks.sh */,
-				7AA691A36BF5B52AB002AFFA06122B6A /* Pods-ReactImageMapTests-resources.sh */,
-				292C54DD8F4A76A5757DB0EA3B10412B /* Pods-ReactImageMapTests-umbrella.h */,
-				53CFDD960A2ABB91660ADD3D45CB66B8 /* Pods-ReactImageMapTests.debug.xcconfig */,
-				376C4CCBCBFBE67853B93637CC6E86FF /* Pods-ReactImageMapTests.release.xcconfig */,
+				4A8353FE2701121564A9E2A46624FA0B /* Info.plist */,
+				B8FFB4B57768FE20FC2CE66BFCC8655F /* Pods-ReactImageMapExample.modulemap */,
+				97DD43CA93FE9FB431E26A7105170A48 /* Pods-ReactImageMapExample-acknowledgements.markdown */,
+				1AA8FFECB26DBA730D285333C7C827CB /* Pods-ReactImageMapExample-acknowledgements.plist */,
+				52CC81E0F6305309A09041C02A8B834F /* Pods-ReactImageMapExample-dummy.m */,
+				39700C7B288DBE4544CA092B10AD0BEA /* Pods-ReactImageMapExample-frameworks.sh */,
+				36529E73CCD1ED74F5A8BC4AE86DB361 /* Pods-ReactImageMapExample-resources.sh */,
+				EC572474A00C7CD688479A28C96617AA /* Pods-ReactImageMapExample-umbrella.h */,
+				24DDF48D7D109AC10E3EA13351047D1F /* Pods-ReactImageMapExample.debug.xcconfig */,
+				A419E0883720810B5FFDE02EA8F30854 /* Pods-ReactImageMapExample.release.xcconfig */,
 			);
-			name = "Pods-ReactImageMapTests";
-			path = "Target Support Files/Pods-ReactImageMapTests";
+			name = "Pods-ReactImageMapExample";
+			path = "Target Support Files/Pods-ReactImageMapExample";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -151,8 +71,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D1744D2B1C5A06CC4140123F06009C5C /* Products */,
-				5DE19C67A35E889253D734514C9FE72B /* Targets Support Files */,
+				CFC4A6F03E363BAF85F64B0BF6B5AC99 /* Products */,
+				2FCBDD2CB439B1C1D9ABE94B727A850B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,12 +84,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D1744D2B1C5A06CC4140123F06009C5C /* Products */ = {
+		CFC4A6F03E363BAF85F64B0BF6B5AC99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE04546AC8AFD201B1DE941D03D3C15E /* Pods_CKReactImageMap.framework */,
-				E040ED09A3A098DE5C2D5AACB765B442 /* Pods_ReactImageMap.framework */,
-				4DC3F4A8EA839371D42B6F86C331323B /* Pods_ReactImageMapTests.framework */,
+				70C31AE26FDE857DCAAB02683682394B /* Pods_ReactImageMapExample.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,82 +103,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		189D1BF750DA12EB00817A1E8C5755D6 /* Headers */ = {
+		D27A0E0E83D3C0BEC7B39B2EDAA14DC1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				489B0D8125951B6FFBD3D867AB58F925 /* Pods-ReactImageMap-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99CE68064E98CBFC843D8FB2508203C4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AAF1DBDAB56EF08E488737D13D4F2834 /* Pods-CKReactImageMap-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEBE5614B0F4A216ED547432EC65E5AA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63BCF4D5E8D39F97218A62A062536596 /* Pods-ReactImageMapTests-umbrella.h in Headers */,
+				4ADBF0D7094E9BFE032DA8182A9A6A5A /* Pods-ReactImageMapExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4144E564C42FEC83BEF5A629375DE778 /* Pods-ReactImageMapTests */ = {
+		D8AB55269A2F27C4318652EBAD4A9D5E /* Pods-ReactImageMapExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85ABF4C9C4F15B47FE46328691877E1A /* Build configuration list for PBXNativeTarget "Pods-ReactImageMapTests" */;
+			buildConfigurationList = C3D6BAB5712D643BEE8BD5DAE543BD4A /* Build configuration list for PBXNativeTarget "Pods-ReactImageMapExample" */;
 			buildPhases = (
-				3A589204CC0B531B3ABBD53AEEDBAB76 /* Sources */,
-				ADBDE861B979F775CDEEB345D9AA31E3 /* Frameworks */,
-				AEBE5614B0F4A216ED547432EC65E5AA /* Headers */,
+				4D5B2B2DD6CF86EB12A4D746F51ABB58 /* Sources */,
+				6E6707D8403AE47CE519EFC9B11BB410 /* Frameworks */,
+				D27A0E0E83D3C0BEC7B39B2EDAA14DC1 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-ReactImageMapTests";
-			productName = "Pods-ReactImageMapTests";
-			productReference = 4DC3F4A8EA839371D42B6F86C331323B /* Pods_ReactImageMapTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4B5FF0A1C410BA9DF18980F4C7B0B3D0 /* Pods-ReactImageMap */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 95C8571FE05FD903470398D287FB0650 /* Build configuration list for PBXNativeTarget "Pods-ReactImageMap" */;
-			buildPhases = (
-				FAF2F154C03272049E5DAA2A2C10811F /* Sources */,
-				286F126FCA0AEE024324BBF13A6C6324 /* Frameworks */,
-				189D1BF750DA12EB00817A1E8C5755D6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-ReactImageMap";
-			productName = "Pods-ReactImageMap";
-			productReference = E040ED09A3A098DE5C2D5AACB765B442 /* Pods_ReactImageMap.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		8A1923E6DD831B78E3CB738C3ECDE12D /* Pods-CKReactImageMap */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D35C9E919393E31B8BA10D004D3FBDA0 /* Build configuration list for PBXNativeTarget "Pods-CKReactImageMap" */;
-			buildPhases = (
-				5EB492A50537468B905C4923DC9B6D0E /* Sources */,
-				E870EBDC9ED31F1B5A2F1A0BBF6122C0 /* Frameworks */,
-				99CE68064E98CBFC843D8FB2508203C4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-CKReactImageMap";
-			productName = "Pods-CKReactImageMap";
-			productReference = EE04546AC8AFD201B1DE941D03D3C15E /* Pods_CKReactImageMap.framework */;
+			name = "Pods-ReactImageMapExample";
+			productName = "Pods-ReactImageMapExample";
+			productReference = 70C31AE26FDE857DCAAB02683682394B /* Pods_ReactImageMapExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -280,48 +148,30 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D1744D2B1C5A06CC4140123F06009C5C /* Products */;
+			productRefGroup = CFC4A6F03E363BAF85F64B0BF6B5AC99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8A1923E6DD831B78E3CB738C3ECDE12D /* Pods-CKReactImageMap */,
-				4B5FF0A1C410BA9DF18980F4C7B0B3D0 /* Pods-ReactImageMap */,
-				4144E564C42FEC83BEF5A629375DE778 /* Pods-ReactImageMapTests */,
+				D8AB55269A2F27C4318652EBAD4A9D5E /* Pods-ReactImageMapExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3A589204CC0B531B3ABBD53AEEDBAB76 /* Sources */ = {
+		4D5B2B2DD6CF86EB12A4D746F51ABB58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB8373423D6D977BE19A5625E7F3539E /* Pods-ReactImageMapTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5EB492A50537468B905C4923DC9B6D0E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				77C6F876CA7F39C19CEAC99D1E4F81DC /* Pods-CKReactImageMap-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAF2F154C03272049E5DAA2A2C10811F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				749B9DE1D001BDBAEAAF3DF226E98BD7 /* Pods-ReactImageMap-dummy.m in Sources */,
+				9A50FDFB02EC84B5084A475F609418AA /* Pods-ReactImageMapExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		51F53BE513FA4CE3DEDE8CFF89FD9744 /* Release */ = {
+		22A749F425C8EDBF186A6823A9EF65EF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 376C4CCBCBFBE67853B93637CC6E86FF /* Pods-ReactImageMapTests.release.xcconfig */;
+			baseConfigurationReference = 24DDF48D7D109AC10E3EA13351047D1F /* Pods-ReactImageMapExample.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -332,25 +182,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ReactImageMapTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ReactImageMapExample/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ReactImageMapTests/Pods-ReactImageMapTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ReactImageMapExample/Pods-ReactImageMapExample.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ReactImageMapTests;
+				PRODUCT_NAME = Pods_ReactImageMapExample;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		6F9224530522DD3C735EC96CF142642E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -406,38 +255,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		9988D9887A4D2B554D7486E6848C6D10 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A3B7E0A90C4CB6F8D9E90059939A529 /* Pods-CKReactImageMap.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CKReactImageMap/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CKReactImageMap/Pods-CKReactImageMap.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CKReactImageMap;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -499,9 +316,9 @@
 			};
 			name = Debug;
 		};
-		C036C16C37A83D5C9177ADED2E3AED1C /* Release */ = {
+		FC902D0FFF71245AB9A190630262F8F4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8B51EFEEAF33CB366A4D8DF2CE84DE5 /* Pods-CKReactImageMap.release.xcconfig */;
+			baseConfigurationReference = A419E0883720810B5FFDE02EA8F30854 /* Pods-ReactImageMapExample.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -512,114 +329,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CKReactImageMap/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ReactImageMapExample/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CKReactImageMap/Pods-CKReactImageMap.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ReactImageMapExample/Pods-ReactImageMapExample.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CKReactImageMap;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DAF2976829A2EBECFB9E18BB09CD7EEB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53CFDD960A2ABB91660ADD3D45CB66B8 /* Pods-ReactImageMapTests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ReactImageMapTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ReactImageMapTests/Pods-ReactImageMapTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ReactImageMapTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F56C350C676186426323881971556B8E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43876A649BA7546C12BAE0AB6E179D54 /* Pods-ReactImageMap.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ReactImageMap/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ReactImageMap/Pods-ReactImageMap.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ReactImageMap;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FAA0CAEE76AC4F9F75F273F1F311EBCA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1860DE39C05D5EA6AFA1775D37166C3 /* Pods-ReactImageMap.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ReactImageMap/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ReactImageMap/Pods-ReactImageMap.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ReactImageMap;
+				PRODUCT_NAME = Pods_ReactImageMapExample;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -641,29 +361,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85ABF4C9C4F15B47FE46328691877E1A /* Build configuration list for PBXNativeTarget "Pods-ReactImageMapTests" */ = {
+		C3D6BAB5712D643BEE8BD5DAE543BD4A /* Build configuration list for PBXNativeTarget "Pods-ReactImageMapExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DAF2976829A2EBECFB9E18BB09CD7EEB /* Debug */,
-				51F53BE513FA4CE3DEDE8CFF89FD9744 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		95C8571FE05FD903470398D287FB0650 /* Build configuration list for PBXNativeTarget "Pods-ReactImageMap" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F56C350C676186426323881971556B8E /* Debug */,
-				FAA0CAEE76AC4F9F75F273F1F311EBCA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D35C9E919393E31B8BA10D004D3FBDA0 /* Build configuration list for PBXNativeTarget "Pods-CKReactImageMap" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9988D9887A4D2B554D7486E6848C6D10 /* Debug */,
-				C036C16C37A83D5C9177ADED2E3AED1C /* Release */,
+				22A749F425C8EDBF186A6823A9EF65EF /* Debug */,
+				FC902D0FFF71245AB9A190630262F8F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

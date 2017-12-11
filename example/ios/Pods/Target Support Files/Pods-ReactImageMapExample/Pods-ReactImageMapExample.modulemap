@@ -1,0 +1,6 @@
+framework module Pods_ReactImageMapExample {
+  umbrella header "Pods-ReactImageMapExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

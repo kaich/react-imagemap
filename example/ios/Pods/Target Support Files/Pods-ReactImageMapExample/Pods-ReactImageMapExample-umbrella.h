@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_ReactImageMapVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_ReactImageMapVersionString[];
+FOUNDATION_EXPORT double Pods_ReactImageMapExampleVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_ReactImageMapExampleVersionString[];
 
