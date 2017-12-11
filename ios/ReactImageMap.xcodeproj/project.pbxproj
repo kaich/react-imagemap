@@ -293,7 +293,7 @@
 		40D6ADBBCFE5AE0230E97360 /* Pods-ReactImageMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactImageMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactImageMap/Pods-ReactImageMap.debug.xcconfig"; sourceTree = "<group>"; };
 		4D0100861FD7C50900A0DE1F /* ReactImageMap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactImageMap-Bridging-Header.h"; sourceTree = "<group>"; };
 		4D0100871FD7C50900A0DE1F /* CKReactImageMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKReactImageMapView.swift; sourceTree = "<group>"; };
-		4D01FC911FD64BF400A0DE1F /* libCKReactImageMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCKReactImageMap.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D01FC911FD64BF400A0DE1F /* libReactImageMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactImageMap.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DDDB4EA1FD573940045ACE7 /* CKRNImageMapManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKRNImageMapManager.h; sourceTree = "<group>"; };
 		4DDDB4EB1FD573940045ACE7 /* CKRNImageMapManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKRNImageMapManager.m; sourceTree = "<group>"; };
 		517E120F10A80E797DA080FC /* Pods-ReactImageMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactImageMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactImageMap/Pods-ReactImageMap.release.xcconfig"; sourceTree = "<group>"; };
@@ -523,7 +523,7 @@
 			isa = PBXGroup;
 			children = (
 				00E356EE1AD99517003FC87E /* ReactImageMapTests.xctest */,
-				4D01FC911FD64BF400A0DE1F /* libCKReactImageMap.a */,
+				4D01FC911FD64BF400A0DE1F /* libReactImageMap.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -573,9 +573,9 @@
 			productReference = 00E356EE1AD99517003FC87E /* ReactImageMapTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4D01FC901FD64BF400A0DE1F /* CKReactImageMap */ = {
+		4D01FC901FD64BF400A0DE1F /* ReactImageMap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D01FCBC1FD64BF400A0DE1F /* Build configuration list for PBXNativeTarget "CKReactImageMap" */;
+			buildConfigurationList = 4D01FCBC1FD64BF400A0DE1F /* Build configuration list for PBXNativeTarget "ReactImageMap" */;
 			buildPhases = (
 				03F4698EC2FEDDCD1E270BB9 /* [CP] Check Pods Manifest.lock */,
 				4D01FC8D1FD64BF400A0DE1F /* Sources */,
@@ -587,9 +587,9 @@
 			);
 			dependencies = (
 			);
-			name = CKReactImageMap;
+			name = ReactImageMap;
 			productName = CKReactImageMap;
-			productReference = 4D01FC911FD64BF400A0DE1F /* libCKReactImageMap.a */;
+			productReference = 4D01FC911FD64BF400A0DE1F /* libReactImageMap.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -676,7 +676,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				4D01FC901FD64BF400A0DE1F /* CKReactImageMap */,
+				4D01FC901FD64BF400A0DE1F /* ReactImageMap */,
 				00E356ED1AD99517003FC87E /* ReactImageMapTests */,
 			);
 		};
@@ -1246,7 +1246,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D01FCBC1FD64BF400A0DE1F /* Build configuration list for PBXNativeTarget "CKReactImageMap" */ = {
+		4D01FCBC1FD64BF400A0DE1F /* Build configuration list for PBXNativeTarget "ReactImageMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4D01FC971FD64BF400A0DE1F /* Debug */,
