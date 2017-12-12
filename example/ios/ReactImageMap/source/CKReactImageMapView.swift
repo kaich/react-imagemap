@@ -52,6 +52,13 @@ class CKReactImageMapView: UIView {
     }
   }
   
+  public var mapName: String? {
+    didSet {
+      if let mapName = self.mapName {
+        imageMapView.mapName = mapName
+      }
+    }
+  }
   
   func addMarker(_ markerData: [String : Any]?, isNeedReload: Bool) {
     if let marker = converJsonDataToMarker(markerData) {
@@ -79,6 +86,28 @@ class CKReactImageMapView: UIView {
     get {
       return _markers
     }
+  }
+  
+  
+  func mark(_ markerData: [String : Any]?) {
+    DispatchQueue.global().async {
+      if let marker = self.converJsonDataToMarker(markerData) {
+        let _ = self.imageMapView.mark(marker)
+      }
+    }
+  }
+  
+  func unmark(_ markerData: [String : Any]?) {
+    if let marker = converJsonDataToMarker(markerData) {
+      let _ = imageMapView.unmark(marker)
+    }
+  }
+  
+  func checkMarked(_ markerData: [String : Any]?) -> Bool {
+    if let marker = converJsonDataToMarker(markerData) {
+      return imageMapView.checkMarked(marker)
+    }
+    return false
   }
   
   

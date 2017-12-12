@@ -13,7 +13,7 @@ class CKMapPopView: UIView {
     let lblMessage = UILabel()
 
     init(marker: CKMapMarker) {
-        super.init(frame: CGRect(x: 0, y: 0, width: 150, height: 80))
+        super.init(frame: CGRect(x: 0, y: 0, width: 150, height: 90))
         
         backgroundColor = UIColor.white
         
@@ -27,7 +27,7 @@ class CKMapPopView: UIView {
         line.backgroundColor = UIColor.hexrgb("#f0f0f0")
         addSubview(line)
         
-        lblMessage.frame = CGRect(x: 0, y: 21, width: 150, height: 20)
+        lblMessage.frame = CGRect(x: 0, y: 21, width: 150, height: 60)
         lblMessage.font = UIFont.systemFont(ofSize: 12)
         lblMessage.text = "\(marker.point.x):\(marker.point.y)"
         addSubview(lblMessage)

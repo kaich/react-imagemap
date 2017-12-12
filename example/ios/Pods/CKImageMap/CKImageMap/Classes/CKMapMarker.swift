@@ -89,18 +89,18 @@ public class CKMapMarker: Mappable {
     public var point: CGPoint = CGPoint(x: 0, y: 0)
     public var size: CGSize = CGSize(width: 30, height: 40)
     public var imageURL: URL?
+    public var markedImageURL: URL?
     public var title = ""
     public var message = ""
-    public var isMarked = false
     public var actionTitles = [String]()
     
-    public init(point: CGPoint, size: CGSize = CGSize(width: 30, height: 40), imageURL: URL? = nil, title: String = "", message: String = "", isMarked: Bool = false, actionTitles: [String] = []) {
+    public init(point: CGPoint, size: CGSize = CGSize(width: 30, height: 40), imageURL: URL? = nil,markedImageURL: URL? = nil, title: String = "", message: String = "", actionTitles: [String] = []) {
         self.point = point
         self.size = size
         self.imageURL = imageURL
+        self.markedImageURL = markedImageURL
         self.title = title
         self.message = message
-        self.isMarked = isMarked
         self.actionTitles = actionTitles
     }
     
@@ -115,9 +115,8 @@ public class CKMapMarker: Mappable {
         size         <- ( map["size"], SizeTransform() )
         imageURL      <- ( map["imageURL"], URLTransform() )
         title       <- map["arr"]
-        message  <- map["dict"]
-        isMarked  <- map["best_friend"]
-        actionTitles     <- map["friends"]
+        message  <- map["message"]
+        actionTitles     <- map["actionTitles"]
     }
 }
 
@@ -154,6 +153,19 @@ class CKMapAnotationView: UIView {
         
         
         self.center = marker.point
+    }
+    
+    func setupWith(isMarked: Bool) {
+        var finalImageURL = self.marker?.imageURL
+        if isMarked {
+            finalImageURL = self.marker?.markedImageURL
+        }
+        if let imageURL = finalImageURL {
+            btnAnnotation.kf.setImage(with: imageURL, for: .normal)
+        }
+        else {
+            btnAnnotation.setImage(UIImage(named: ""), for: .normal)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
