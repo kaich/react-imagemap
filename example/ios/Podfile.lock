@@ -26,7 +26,7 @@ CHECKOUT OPTIONS:
     :commit: fa553167645bdbe821c398755f4fc8d69f890c95
     :git: https://github.com/kaich/AMPopTip.git
   CKImageMap:
-    :commit: c4a6c45c38d9a7547c0dbb4befcf07c9daefff5d
+    :commit: 44cf1e791514d85a53b77bcf7169ce58a004b9ab
     :git: https://github.com/kaich/CKImageMap.git
 
 SPEC CHECKSUMS:
@@ -38,4 +38,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 15e086a55dbaed53be86a7da3d3a5149815610c9
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0.beta.2

@@ -1,7 +1,7 @@
 // CKReactImageMapView.js
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactNative, { requireNativeComponent, UIManager } from 'react-native';
+import ReactNative, { requireNativeComponent, UIManager, NativeModules} from 'react-native';
 const CKRNImageMapManager = NativeModules.CKRNImageMapManager;
 
 class CKReactImageMapView extends React.Component {
@@ -19,7 +19,7 @@ class CKReactImageMapView extends React.Component {
   addMarker = (marker) => {
     UIManager.dispatchViewManagerCommand(
       this._getImageMapHandle(),
-      UIManager.CKReactImageMap.Commands.addMarker,
+      UIManager.CKRNImageMap.Commands.addMarker,
       [marker]
     );
   };
@@ -30,7 +30,7 @@ class CKReactImageMapView extends React.Component {
   mark = (marker) => {
     UIManager.dispatchViewManagerCommand(
       this._getImageMapHandle(),
-      UIManager.CKReactImageMap.Commands.mark,
+      UIManager.CKRNImageMap.Commands.mark,
       [marker]
     );
   };
@@ -41,7 +41,7 @@ class CKReactImageMapView extends React.Component {
   unmark = (marker) => {
     UIManager.dispatchViewManagerCommand(
       this._getImageMapHandle(),
-      UIManager.CKReactImageMap.Commands.unmark,
+      UIManager.CKRNImageMap.Commands.unmark,
       [marker]
     );
   };
@@ -50,7 +50,7 @@ class CKReactImageMapView extends React.Component {
    * mark a Marker 
   */ 
   checkMarked = (marker) => {
-     return CKRNImageMapManager.checkMarked(this._getImageMapHandle())
+     return CKRNImageMapManager.checkMarked(this._getImageMapHandle(), marker)
   };
 
 }
@@ -60,9 +60,13 @@ CKReactImageMapView.propTypes = {
    * A Boolean value that determines whether the user may use pinch
    * gestures to zoom in and out of the map.
    */
+  mapName: PropTypes.string,
   imageURLString: PropTypes.string,
   markers: PropTypes.array,
   onClickAnnotation: PropTypes.func,
+  mark: PropTypes.func,
+  unmark: PropTypes.func,
+  checkMarked: PropTypes.func,
 };
 
 var CKReactImageMap = requireNativeComponent('CKRNImageMap', CKReactImageMapView);

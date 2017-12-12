@@ -114,6 +114,7 @@ public class CKMapMarker: Mappable {
         point    <- ( map["point"], PointTransform() )
         size         <- ( map["size"], SizeTransform() )
         imageURL      <- ( map["imageURL"], URLTransform() )
+        markedImageURL      <- ( map["markedImageURL"], URLTransform() )
         title       <- map["arr"]
         message  <- map["message"]
         actionTitles     <- map["actionTitles"]

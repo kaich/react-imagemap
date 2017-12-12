@@ -31,29 +31,29 @@ export default class App extends Component<{}> {
         mapName="example"
         imageURLString="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1512564037530&di=c9daba6def0a23f7328d8c70085420c9&imgtype=0&src=http%3A%2F%2Fa.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fbd315c6034a85edf2da2383043540923dd5475f3.jpg"
         markers={[
-          {point: {x: 100 , y: 200}, size: {width: 20, height: 40}, title: "test", message: "message text", imageURL: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1512793642551&di=3f4454ce4d9ef58d259834aa56897f76&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Faa18972bd40735fa3981838395510fb30f240893.jpg", markedImageURL: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513078883283&di=23f785ff1e279de89e8dbf8efbadfaa2&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F80cb39dbb6fd5266fb94af28a018972bd407364a.jpg" },
+          {point: {x: 100 , y: 200}, size: {width: 20, height: 40}, title: "test", message: "message text", imageURL: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1512793642551&di=3f4454ce4d9ef58d259834aa56897f76&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Faa18972bd40735fa3981838395510fb30f240893.jpg", markedImageURL: "https://avatars0.githubusercontent.com/u/5013020?s=460&v=4" },
 
         ]}
-        onClickAnnotation={this._onClickAnnotation}
+        onClickAnnotation={(event) => {this._onClickAnnotation(event)}}
         />
       </View>
     );
   }
 
-  _onClickAnnotation = (marker) => {
-    console.log(marker.title)
+  _onClickAnnotation = (event) => {
+    let marker = event.nativeEvent.marker
+
     ActionSheetIOS.showActionSheetWithOptions({
       options: ['mark', 'Cancel'],
       cancelButtonIndex: 1,
     },
     (buttonIndex) => {
       if (buttonIndex === 0) { 
-        this.imageMap.checkMarked(marker).then(() => {
-          console.log('-----------')
-        })
+        this.imageMap.mark(marker)
       }
     });
   }
+
 
 }
 
