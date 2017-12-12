@@ -14,7 +14,7 @@ class CKReactImageMapView extends React.Component {
   };
 
   /**
-   * Add a Marker 
+   * Add a Marker
   */
   addMarker = (marker) => {
     UIManager.dispatchViewManagerCommand(
@@ -25,8 +25,8 @@ class CKReactImageMapView extends React.Component {
   };
 
   /**
-   * mark a Marker 
-  */ 
+   * mark a Marker
+  */
   mark = (marker) => {
     UIManager.dispatchViewManagerCommand(
       this._getImageMapHandle(),
@@ -36,8 +36,8 @@ class CKReactImageMapView extends React.Component {
   };
 
   /**
-   * unmark a Marker 
-  */ 
+   * unmark a Marker
+  */
   unmark = (marker) => {
     UIManager.dispatchViewManagerCommand(
       this._getImageMapHandle(),
@@ -47,8 +47,8 @@ class CKReactImageMapView extends React.Component {
   };
 
   /**
-   * mark a Marker 
-  */ 
+   * mark a Marker
+  */
   checkMarked = (marker) => {
      return CKRNImageMapManager.checkMarked(this._getImageMapHandle(), marker)
   };
@@ -63,6 +63,7 @@ CKReactImageMapView.propTypes = {
   mapName: PropTypes.string,
   imageURLString: PropTypes.string,
   markers: PropTypes.array,
+	showDefaultPopView: PropTypes.bool,
   onClickAnnotation: PropTypes.func,
   mark: PropTypes.func,
   unmark: PropTypes.func,

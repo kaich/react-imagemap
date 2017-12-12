@@ -60,6 +60,12 @@ class CKReactImageMapView: UIView {
     }
   }
   
+  public var showDefaultPopView: Bool = true {
+    didSet {
+      imageMapView.showDefaultPopView = self.showDefaultPopView
+    }
+  }
+  
   func addMarker(_ markerData: [String : Any]?, isNeedReload: Bool) {
     if let marker = converJsonDataToMarker(markerData) {
       imageMapView.markers.append(marker)

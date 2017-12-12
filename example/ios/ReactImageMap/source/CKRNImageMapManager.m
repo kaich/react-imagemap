@@ -7,7 +7,7 @@
 //
 
 #import "CKRNImageMapManager.h"
-#import "ReactImageMapExample-Swift.h"
+#import "Odyssey-Swift.h"
 #import <React/RCTUIManager.h>
 
 @implementation CKRNImageMapManager
@@ -17,6 +17,7 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_VIEW_PROPERTY(mapName, NSString)
 RCT_EXPORT_VIEW_PROPERTY(imageURLString, NSString)
 RCT_EXPORT_VIEW_PROPERTY(markers, NSArray)
+RCT_EXPORT_VIEW_PROPERTY(showDefaultPopView, BOOL)
 RCT_EXPORT_VIEW_PROPERTY(onClickAnnotation, RCTBubblingEventBlock)
 
 
