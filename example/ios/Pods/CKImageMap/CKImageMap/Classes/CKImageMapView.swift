@@ -26,7 +26,10 @@ public class CKImageMapView: UIView {
     public var mapName: String? {
         didSet {
             if let mapName = mapName {
-                self.markManager = CKMapMarkerManager(name: mapName)
+                if self.markManager == nil {
+                    self.markManager = CKMapMarkerManager(name: mapName)
+                    self.reloadData()
+                }
             }
         }
     }

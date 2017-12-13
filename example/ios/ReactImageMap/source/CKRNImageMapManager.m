@@ -7,7 +7,7 @@
 //
 
 #import "CKRNImageMapManager.h"
-#import "Odyssey-Swift.h"
+#import "ReactImageMapExample-Swift.h"
 #import <React/RCTUIManager.h>
 
 @implementation CKRNImageMapManager
